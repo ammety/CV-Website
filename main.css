@@ -5,22 +5,24 @@
 body{
     background-color:#B8B894;
     font-family:Calibri;
-    margin: 0px;
+    margin: 0px auto;
+    padding: 0px;
 }
 
 header{
-    background-color: #0F0F0A;
     position: fixed;
     top: 0px;
     right: 0px;
     left: 0px;
     margin-bottom: 10px;
     max-width: 100%;
-    display: block
+    display: block;
+    z-index: 5;
 }
-
+header, nav, .nav, .current, h1, .cv, footer {
+    background-color: #0F0F0A;
+}
 nav{
-    background-color:#0F0F0A;
     padding: 5px;
     padding-bottom: 8px;
     text-align:center;
@@ -35,7 +37,6 @@ nav a:hover{
 .nav{
     font-weight:300;
     color:ivory;
-    background-color:#0F0F0A;
     text-decoration:none;
     text-align:center;
     border-right: 2px grey;
@@ -47,7 +48,6 @@ nav a:hover{
 .current{
     font-weight:bolder;
     color:ivory;
-    background-color:#0F0F0A;
     text-decoration:none;
     text-align:center;
     border-right: 2px grey;
@@ -60,7 +60,6 @@ h1{
     font-weight:bolder;
     color:ivory;
     font-size: 30px;
-    background-color: #0F0F0A;
     display:inline-;
     margin: 0px auto 5px auto;
     text-align: center;
@@ -69,7 +68,6 @@ h1{
 .cv{
     color:ivory;
     font-size:20px;
-    background-color: #0F0F0A;
     display:inline-;
     margin-top:0px;
     margin-bottom: 0px;
@@ -79,7 +77,7 @@ h1{
 }
 #logo{
     float:right;
-    max-width: 50%
+    max-width: 50%;
 }
 #float{
     float:left;
@@ -94,20 +92,27 @@ p{
 .blog{
     background-color: ivory;
     padding: 20px 30px;
-    display: inline-block;
+    display: block;
     width: 90%;
-    margin: 20px auto;
-    align-content: center;
     box-shadow: 5px 5px 6px 2px rgba(98,98,70,0.59);
     border-radius: 15px;
+    position: relative;
+    margin: 20px auto;
 }
+
 li li{
     font-family: georgia;
     font-size: 13px;
 }
+ol{
+    padding: 0px;
+    margin: 0px auto;
+}
+
 
 #first{
-    margin-top: 190px; 
+    margin: 20px auto;
+    margin-top: 190px;    
 }
 
 .clear-fix{
@@ -117,7 +122,7 @@ li li{
     clear: both;
     visibility: hidden;
 }
-h4{
+.blog h4{
     margin:0px 0px;
     border-bottom:2px solid grey;
     display:block;
@@ -127,7 +132,6 @@ h4{
 }
 
 footer{
-    background-color:#0F0F0A;
     color: ivory;
     font-size: 12px;
     font-weight: lighter;
@@ -138,8 +142,42 @@ footer a{
     color: ivory;
     font-weight: bold;
 }
+#personal-details{
+    margin-top: 200px;
+}
+
+#message{
+    font-family: calibri;
+    border-radius: 15px;
+    padding: 10px 5px;
+    border: 1px solid #0F0F0A;
+    font-weight: bold;
+    margin: 5px 0px;
+    background-color: ivory;
+}
+#email, #name{
+    font-family: calibri;
+    border-radius: 10px;
+    margin: 5px 0px 15px 5px;
+    font-weight: lighter;
+    background-color: ivory;
+    padding: 0px 5px;
+    width: 200px;
+}
+#email{
+    position: relative;
+    left: 4px;
+}
+
+form{
+    max-width: 50%;
+    width: 70%;
+    margin: 20px;
+    
+}
+
 @media screen and (min-width:543px){
-    #float{
+#float{
     max-width:50%;
     margin:5% 9%;
 }
@@ -153,16 +191,14 @@ h1{
     font-size:15px;
 }
 #first{
-    margin-top: 200px; 
+    margin-top: 210px auto; 
+}
 }
     
 @media screen and (min-width:669px){
 .blog{
     width: 80%;
-    margin: 20px, auto;
-    display: inline-block;
-    align-content: center;
-    
+    margin: 20px auto;    
 }
 }
     
@@ -203,5 +239,6 @@ h1{
     }
     .blog{
         width: 80%;
+        margin: 0px auto;
     }
 }
