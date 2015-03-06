@@ -3,13 +3,13 @@
 }
 
 body{
-    background-color:#B8B894;
+    background-color:#D1FFE8;
     font-family:Calibri;
     margin: 0px auto;
     padding: 0px;
 }
 
-header{
+.header{
     position: fixed;
     top: 0px;
     right: 0px;
@@ -18,18 +18,19 @@ header{
     max-width: 100%;
     display: block;
     z-index: 5;
+    max-height: 200px;
 }
 header, nav, .nav, .current, h1, .cv, footer {
-    background-color: #0F0F0A;
+    background-color: #1C1C13;
 }
 nav{
     padding: 5px;
     padding-bottom: 8px;
     text-align:center;
     width: 100%;
-    box-shadow:  0px 4px 6px 1px rgba(98,98,70,1);
-    clear: both
-    
+    box-shadow: 3px 3px 8px 0px rgba(98,98,70,0.59);
+    clear: both;
+    position: relative;
 }
 nav a:hover{
     font-weight: bold   
@@ -43,11 +44,12 @@ nav a:hover{
     padding:0px 20px 0px 20px;
     text-transform: uppercase;
     margin: 0px auto;
-    font-size:13px
+    font-size:13px;
+    
 }
 .current{
     font-weight:bolder;
-    color:ivory;
+    color:#29A3CC;
     text-decoration:none;
     text-align:center;
     border-right: 2px grey;
@@ -63,6 +65,7 @@ h1{
     display:inline-;
     margin: 0px auto 5px auto;
     text-align: center;
+    
 }
 
 .cv{
@@ -75,14 +78,15 @@ h1{
     bottom: 10px;
     text-align: center;
 }
-#logo{
+.logo{
     float:right;
     max-width: 50%;
 }
-#float{
+.float{
     float:left;
     margin: 5% 6%;
     text-align: center;
+    display: inline;
 }
 p{
     font-family:georgia;
@@ -94,12 +98,31 @@ p{
     padding: 20px 30px;
     display: block;
     width: 90%;
-    box-shadow: 5px 5px 6px 2px rgba(98,98,70,0.59);
+    box-shadow: 1px 1px 2px 0px rgba(98,98,70,0.59);
     border-radius: 15px;
     position: relative;
     margin: 20px auto;
 }
 
+.last-blog{
+    background-color: ivory;
+    padding: 20px 30px;
+    display: block;
+    width: 90%;
+    box-shadow: 1px 1px 2px 0px rgba(98,98,70,0.59);
+    border-radius: 15px;
+    position: relative;
+    margin: 20px auto 50px auto;
+    font-family: georgia;
+    font-size: 14px
+}
+
+#profile{
+    margin: 0px auto;
+    margin-top: 200px;
+    border-radius: 50%;
+    border: 3px solid #29A3CC;
+}
 li li{
     font-family: georgia;
     font-size: 13px;
@@ -115,6 +138,19 @@ ol{
     margin-top: 190px;    
 }
 
+#first-edu{
+    margin: 40px auto;
+    margin-top: 190px;
+}
+
+#first-test{
+    margin: 20px auto;
+    margin-top: 190px;
+}
+#education .blog{
+   max-width: 70%; 
+}
+
 .clear-fix{
     content:".";
     display: block;
@@ -122,11 +158,11 @@ ol{
     clear: both;
     visibility: hidden;
 }
-.blog h4{
+.blog h4, .last-blog h4{
     margin:0px 0px;
-    border-bottom:2px solid grey;
+    border-bottom:2px solid #29A3CC;
     display:block;
-    padding: 0px;
+    padding: 0px 0px 3px 0px;
     position: relative;
     bottom: 5px;
 }
@@ -136,21 +172,28 @@ footer{
     font-size: 12px;
     font-weight: lighter;
     padding: 8px;
+    position: fixed; 
+    bottom: 0px;
+    margin-top: 10px;
+    display: block;
+    width: 100%
 }
 footer a{
     text-decoration: none;
-    color: ivory;
+    color: #29A3CC;
     font-weight: bold;
 }
-#personal-details{
-    margin-top: 200px;
+.footer{
+    display: block;
+    background-color: #1C1C13;
+    width:100%;
 }
 
 #message{
     font-family: calibri;
     border-radius: 15px;
     padding: 10px 5px;
-    border: 1px solid #0F0F0A;
+    border: 1px solid #29A3CC;
     font-weight: bold;
     margin: 5px 0px;
     background-color: ivory;
@@ -169,17 +212,41 @@ footer a{
     left: 4px;
 }
 
+
 form{
     max-width: 50%;
     width: 70%;
     margin: 20px;
+    margin-bottom: 80px;
+}
+ul{
+    list-style: none;
+}
+
+#qualifications p{
+    position: relative;
+    bottom: 12px;
+}
+#personal-details, #qualifications{
+    margin: 15px auto;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+#personal-details a{
+    text-decoration: none;
+    color: #29A3CC;
+    background-color: none;
     
 }
 
-@media screen and (min-width:543px){
-#float{
+@media screen and (min-width:555px){
+.float{
     max-width:50%;
-    margin:5% 9%;
+    margin:20px 9%;
 }
 h1{
     font-size:35px;
@@ -193,52 +260,92 @@ h1{
 #first{
     margin-top: 210px auto; 
 }
+.logo{
+    max-width: 262px;
+    margin: 1%;
+}
+
+nav{
+    position: absolute 123px;
+}
+
+form{
+    float:right;
+    margin-top: 200px;
+    position: relative;
+    right: 40px
+}
+#personal-details{
+    float:left;
+    max-width: 40%;
+    padding-left: 5%
 }
     
 @media screen and (min-width:669px){
-.blog{
+.blog, .last-blog{
     width: 80%;
     margin: 20px auto;    
 }
+.last-blog{
+    margin-bottom: 50px;
+}
+#first{
+    margin-top: 220px auto;
+}
+#personal-details{
+    max-width: 50%;
+}
+form{
+    max-width: 50%;
+}
+#contact{
+    margin: 0px auto;
+}
+}
+
+@media screen and (min-width:773px){
+    
+.current{
+    position: relative;
+    bottom: 5px;
+}
+h1{
+    font-size: 40px;
+}
+.cv{
+    font-size: 30px;
+}
+.float{
+    margin: 20px 40px;
+}
+#personal-details{
+    margin: 250px 10% 0px;
+}
+form{
+    margin: 230px auto 0px auto;
+    position: static;
 }
     
-    
-    
+#education .blog, #qualifications, .blog, .last-blog{
+    max-width: 600px;
+}
 
 
 
-@media screen and (min-width:6000px){
-    .current{
-        position: relative;
-        bottom: 10px;
-        font-size: 18px;
-    }
+@media screen and (min-width:920px){
     .nav{
         font-size: 18px;
     }
     h1{
-        font-size:70px;
-        padding: 10px 50px 0px 50px;
-        margin-top:10px;
-        margin-bottom:0px;
-    }
-    #logo{
-        float:right; 
-        display: inline-block;
-        max-width: 30%;
+        font-size:50px;
     }
     .cv{
-        right: 10px;
-        float: right;
-        text-align: left;
         font-size:35px;
     }
-    nav{
-        padding: 12px;
-        padding-bottom: 15px;
-    }
-    .blog{
-        width: 80%;
-        margin: 0px auto;
-    }
+.float{
+    margin: 10px 30px;
+}
+    
+.logo{
+    margin-left: auto;
 }
