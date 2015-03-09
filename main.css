@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color:#D1FFE8;
+    background-color:white;
     font-family:"Raleway";
     margin: 0px auto;
     padding: 0px;
@@ -21,11 +21,10 @@ body{
     max-height: 200px;
 }
 header, nav, .nav, .current, h1, .cv, footer {
-    background-color: #1C1C13;
+    background-color: white;
 }
 nav{
-    padding: 5px;
-    padding-bottom: 8px;
+    padding: 5px 9px;
     text-align:center;
     width: 100%;
     box-shadow: 3px 3px 8px 0px rgba(98,98,70,0.59);
@@ -37,7 +36,7 @@ nav a:hover{
 }
 .nav{
     font-weight:300;
-    color:ivory;
+    color:#FF33CC;
     text-decoration:none;
     text-align:center;
     border-right: 2px grey;
@@ -48,7 +47,6 @@ nav a:hover{
     
 }
 .current{
-    font-weight:bolder;
     color:#29A3CC;
     text-decoration:none;
     text-align:center;
@@ -59,8 +57,8 @@ nav a:hover{
 }
 
 h1{
-    font-weight:bolder;
-    color:ivory;
+    font-weight:lighter;
+    color:#212131;
     font-size: 30px;
     display:inline-;
     margin: 0px auto 5px auto;
@@ -70,7 +68,7 @@ h1{
 }
 
 .cv{
-    color:ivory;
+    color:#212131;
     font-size:20px;
     display:inline-;
     margin-top:0px;
@@ -92,12 +90,12 @@ h1{
     display: inline;
 }
 p{
-    font-family:georgia;
+    font-family:Quicksand;
     font-size: 14px;
 }
 
 .blog{
-    background-color: ivory;
+    background-color: #F3F3F7;
     padding: 20px 30px;
     display: block;
     width: 90%;
@@ -108,7 +106,7 @@ p{
 }
 
 .last-blog{
-    background-color: ivory;
+    background-color: #F3F3F7;
     padding: 20px 30px;
     display: block;
     width: 90%;
@@ -121,13 +119,18 @@ p{
 }
 
 #profile{
-    margin: 0px auto;
-    margin-top: 200px;
     border-radius: 50%;
     border: 3px solid #29A3CC;
+    margin: 200px auto;
+    margin-bottom: 20px;
+    display: block;
 }
+#intro{
+    padding: 10px
+}
+
 li li{
-    font-family: georgia;
+    font-family: Quicksand;
     font-size: 13px;
 }
 ol{
@@ -163,15 +166,17 @@ ol{
 }
 .blog h4, .last-blog h4{
     margin:0px 0px;
-    border-bottom:2px solid #29A3CC;
+    border-bottom:2px solid #33CCFF;
     display:block;
     padding: 0px 0px 3px 0px;
     position: relative;
     bottom: 5px;
+    font-family: Raleway;
+    font-size: 15px
 }
 
 footer{
-    color: ivory;
+    color: #212131;
     font-size: 12px;
     font-weight: lighter;
     padding: 8px;
@@ -183,8 +188,7 @@ footer{
 }
 footer a{
     text-decoration: none;
-    color: #29A3CC;
-    font-weight: bold;
+    color: #FF33CC;
 }
 .footer{
     display: block;
@@ -199,14 +203,14 @@ footer a{
     border: 1px solid #29A3CC;
     font-weight: bold;
     margin: 5px 0px;
-    background-color: ivory;
+    background-color: #F3F3F7;
 }
 #email, #name{
     font-family: calibri;
     border-radius: 10px;
     margin: 5px 0px 15px 5px;
     font-weight: lighter;
-    background-color: ivory;
+    background-color: #F3F3F7;
     padding: 0px 5px;
     width: 200px;
 }
@@ -236,7 +240,9 @@ ul{
     display: block;
     text-align: center;
     margin-top: 200px;
-
+}
+#qualifications{
+    margin-top: 230px;
 }
 
 #personal-details a{
@@ -304,13 +310,29 @@ form{
 #contact{
     margin: 0px auto;
 }
+    
+#profile{
+    float: left;
+    margin: 250px 8%;
+    max-width: 50%;
+    
+    
+}
+    
+#intro{
+    float: right;
+    max-width: 50%;
+    display: block;
+    margin: 280px 2%;
+    
+}
 }
 
 @media screen and (min-width:773px){
     
 .current{
     position: relative;
-    bottom: 5px;
+    bottom: 3px;
 }
 h1{
     font-size: 40px;
